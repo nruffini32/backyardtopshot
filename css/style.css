@@ -21,7 +21,7 @@ header {
 h1 {
     color: #EAEAEA;
     font-family: "Anton", sans-serif;
-    font-size: 50px;
+    font-size: 3.5em;
     padding-top: 0.2em;
 }
 
@@ -94,6 +94,23 @@ main p {
 .home4 {
     border-top: 10px solid #EAEAEA;
     display: flex;
+    flex-direction: column;
+}
+
+#challenge {
+    text-align: right;
+    padding-top: 0.4em;
+}
+
+.home4 .text {
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+#homevid {
+    align-self: center;
+    margin-top:0.6em;
+    border-top: 5px solid #EAEAEA; 
 }
 
 #homeimg {
@@ -117,6 +134,88 @@ main p {
     padding: 0 .4em 0 .4em;
     font-size: 1.2em;
 }
+
+
+
+/* Marketplace */
+
+.market h2 {
+    font-family: "Bebas Neue", sans-serif;
+    padding: .5em .2em 0 .2em;
+    font-size: 2em;
+}
+.market .headers > p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+.market .headers {
+    border-bottom: 10px solid #EAEAEA;
+}
+.marketcontainer {
+    display:grid;
+    grid-template-rows: repeat(9, auto);
+    grid-template-columns: 1fr;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #81759B;
+    margin-bottom: -3px;
+}
+
+.marketcontainer > div {
+    border-bottom: 10px solid #EAEAEA;
+}
+
+.marketcontainer .name {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding-top: 0.5em;
+    font-size: 2em;
+    color: #333;
+}
+
+.marketcontainer .play {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    padding-bottom: 0.3em;
+    color: #333;
+}
+
+.marketcontainer .price {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.3em;
+    padding-bottom: 0.7em;
+    text-align: center;
+    color: #333;
+}
+
+.marketcontainer .moment {
+    border: 10px solid #81759B;
+    margin-bottom: 20px;
+}
+
+.marketcontainer #last {
+    margin-bottom: 0;
+}
+
+.market {
+    background-color: #EAEAEA;
+}
+
+.market .headers, .marketcontainer .text {
+    background-color: #BCBEBE;
+}
+
+.marketcontainer .text {
+    
+}
+
 
 /* Players */
 h2 {
@@ -197,8 +296,6 @@ h2 {
     border-bottom: 5px solid #EAEAEA;
     align-self: center;
 }
-
-
 
 /* NBA Top Shot */
 .nbacontainer {
