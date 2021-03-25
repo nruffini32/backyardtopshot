@@ -23,6 +23,7 @@ h1 {
     font-family: "Anton", sans-serif;
     font-size: 3.5em;
     padding-top: 0.2em;
+    text-align: center;
 }
 
 #logo {
@@ -99,7 +100,7 @@ main p {
 
 #challenge {
     text-align: right;
-    padding-top: 0.4em;
+    padding-top: 0.2em;
 }
 
 .home4 .text {
