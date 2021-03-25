@@ -25,6 +25,7 @@ h1 {
     padding-top: 0.2em;
     text-align: center;
     justify-self: center;
+    margin: auto;
 }
 
 #logo {
