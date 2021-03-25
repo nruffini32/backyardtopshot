@@ -24,7 +24,7 @@ h1 {
     font-size: 3.5em;
     padding-top: 0.2em;
     text-align: center;
-    align-self: center;
+    justify-self: center;
 }
 
 #logo {
