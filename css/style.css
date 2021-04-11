@@ -116,7 +116,7 @@ main p {
     border-top: 5px solid #EAEAEA; 
 }
 
-#homeimg {
+.homeimg {
     align-self: center;
     width: 50%;
     border: 5px solid #EAEAEA;
@@ -213,10 +213,6 @@ video {
 
 .market .headers, .marketcontainer .text {
     background-color: #BCBEBE;
-}
-
-.marketcontainer .text {
-    
 }
 
 
