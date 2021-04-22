@@ -27,10 +27,25 @@ h1 {
     justify-self: center;
     margin: auto;
 }
+ 
+ /*Keyframes for animation*/
+ @-webkit-keyframes grow{
+   /*Your code here.*/
+   from {width: 0px; opacity: 0;}
+   to {width: 20%; opacity: 1;}
+ }
+ 
+ @keyframes grow{
+   /*Your code here.*/
+   from {width: 0px; opacity: 0;}
+   to {width: 20%; opacity: 1;}
+ } 
 
 #logo {
     width: 20%;
     padding: 0 0 1em 0;
+    animation-name: grow;
+    animation-duration: 3s;
 }
 
 nav {
@@ -583,11 +598,95 @@ footer {
     #topshot {
         display: none;
     }
-
-
-
-
 }
+
+@media screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 4em;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    .nav_item a {
+        font-size: 2em;
+    }
+
+    .nav_item a:hover {
+        transition: all .4s ease-in-out;
+        border-top: 2px solid #333;
+        margin-left: 0.5em;
+    }
+    
+    #current {
+        color: #333;
+        border-top: 2px solid #333;
+        margin-left: 0.5em;
+    }
+
+    /* HOMEPAGE */
+    .homecontainer .heading {
+        font-size: 4em;
+    }
+
+    .homecontainer .text {
+        font-size: 2em;
+    }
+
+    footer p {
+        font-size: 1.3em;
+    }
+
+    /* PLAYERS */
+
+    #main h2 {
+        font-size: 4em;
+    }
+
+    .playerscontainer .name {
+        font-size: 2.5em;
+    }
+
+    .playerscontainer .info {
+        font-size: 2em;
+    }
+
+    .playerscontainer .text {
+        font-size: 1.8em;
+    }
+
+    /* MARKETPLACE */
+    .marketcontainer .name {
+        font-size: 3em;
+    }
+
+    .marketcontainer .play, .marketcontainer .price {
+        font-size: 1.5em;
+    }
+
+
+    /* TOP SHOT */
+    .nbacontainer .heading {
+        font-size: 3em;
+    }
+
+    .nbacontainer .text {
+        font-size: 1.8em;
+    }
+
+    #pics {
+        width: 100%;
+        justify-self: center;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #logo {
+      animation: none;
+    }
+  }
 
 
 
